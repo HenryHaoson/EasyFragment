@@ -38,7 +38,7 @@ public class FragmentBaseTransaction {
         }
 
         public Builder add(@IdRes int containerId, @NonNull Fragment fragment) {
-            ft.add(containerId, fragment,getFragmentTag(fragment));
+            ft.add(containerId, fragment, getFragmentTag(fragment));
             return this;
         }
 

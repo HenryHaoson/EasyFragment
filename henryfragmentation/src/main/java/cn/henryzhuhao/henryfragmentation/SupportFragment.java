@@ -112,7 +112,7 @@ public class SupportFragment extends Fragment implements SupportFragmentAction {
         mFragmentStack.clearStack();
         SupportFragment parentFragment = (SupportFragment) getParentFragment();
         if (parentFragment == null) {
-            activity.close();
+            activity.close(this);
         } else {
             parentFragment.close(this);
         }
